@@ -58,6 +58,7 @@ fetchData();
              title:()=>{
                       display:false
               },
+/*from Chart js tutorial: adding '$' to label */
               label: function(context) {
                         let label = context.dataset.label || '';
 
@@ -68,7 +69,7 @@ fetchData();
                             label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
                         }
                         return label;
-                    }
+                    } 
         }
      }
         },
